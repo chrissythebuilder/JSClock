@@ -42,4 +42,11 @@ body {
     background: black;
     position: absolute;
     top: 50%;
+    /* transform the origin to rotate on the far-right*/
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    /* tick itself around */
+    transition: all .05s;
+    /* ticking animation */
+    transition-timing-function: cubic-bezier(0.29, 0.76, 0.58, 1);
   }
